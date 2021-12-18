@@ -11,7 +11,7 @@ public class testePessoas {
 		Scanner leia = new Scanner(System.in);
 		
 		
-		for (int x=0;x<3;x++)
+		for (int x=0;x<5;x++)
 		{
 		desempregado.cadastro();
 		desempregado.ajuda();
