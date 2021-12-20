@@ -106,6 +106,6 @@ public class Desempregado extends Pessoas {
 	@Override
 	public void imprimirinfo()
 	{
-		
+		System.out.println("\n");
 	}
 }
