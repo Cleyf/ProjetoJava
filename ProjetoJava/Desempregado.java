@@ -24,7 +24,7 @@ public class Desempregado extends Pessoas {
 		System.out.println("\n(1) Para 2 duas pessoas ou menos ");
 		System.out.println("\n(2) Para 3 pessoas");
 		System.out.println("\n(3) Para 4 pessoas ou mais");
-		System.out.println("\n(4) Para Sair ");
+		System.out.println("\n(0) Para Sair ");
 		System.out.println("\nDigite sua opção:");
 		op = leia.nextInt();
 		System.out.println("\n************************************");
