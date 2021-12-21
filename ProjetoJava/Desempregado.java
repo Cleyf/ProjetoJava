@@ -90,6 +90,9 @@ public class Desempregado extends Pessoas {
 				registro.add(setNome);
 			}
 			break;
+		case 0:
+			System.out.println("Saindo...");
+		break;
 		default:
 			System.out.println("Tente novamento, com uma opção válida");
 		}
