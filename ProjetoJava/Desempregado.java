@@ -16,6 +16,8 @@ public class Desempregado extends Pessoas {
 	@Override
 	public void cadastro()
 	{
+		do
+		{
 		System.out.println("\n************************************");
 		System.out.println("\n Informe a quantidade de pessoas:");
 		System.out.println("\n************************************");
@@ -25,6 +27,7 @@ public class Desempregado extends Pessoas {
 		System.out.println("\n(4) Para Sair ");
 		System.out.println("\nDigite sua opção:");
 		op = leia.nextInt();
+		System.out.println("\n************************************");
 		switch (op)
 		{
 		case 1:
@@ -43,8 +46,8 @@ public class Desempregado extends Pessoas {
 				System.out.println("\n Vocês irão ganhar uma cesta básica, "
 						+ "serão acompanhados pela equipe GEN ");
 				System.out.println("Nome para cadastrar");
-				String nome= leia.next();
-				registro.add(nome);
+				String setNome= leia.next();
+				registro.add(setNome);
 			}
 			break;
 		case 2:
@@ -63,8 +66,8 @@ public class Desempregado extends Pessoas {
 				System.out.println("\n Vocês irão ganhar uma cesta básica, "
 						+ "serão acompanhados pela equipe GEN ");
 				System.out.println("Nome para cadastrar");
-				String nome= leia.next();
-				registro.add(nome);
+				String setNome= leia.next();
+				registro.add(setNome);
 			}
 			break;
 		case 3:
@@ -83,17 +86,15 @@ public class Desempregado extends Pessoas {
 				System.out.println("\n Vocês irão ganhar uma cesta básica, "
 						+ "serão acompanhados pela equipe GEN ");
 				System.out.println("Nome para cadastrar");
-				String nome= leia.next();
-				registro.add(nome);
+				String setNome= leia.next();
+				registro.add(setNome);
 			}
 			break;
-		
-		case 4:
-			System.out.println("\nSaindo do programa");
-		break;
+		default:
+			System.out.println("Tente novamento, com uma opção válida");
 		}
-		System.out.println("\nLista de cadastrados");
-		System.out.println(registro);
+		}while(op !=0);
+		
 	}
 	
 	@Override
@@ -107,5 +108,7 @@ public class Desempregado extends Pessoas {
 	public void imprimirinfo()
 	{
 		System.out.println("\n");
+		System.out.println("\nLista de cadastrados");
+		System.out.println(registro);
 	}
 }
